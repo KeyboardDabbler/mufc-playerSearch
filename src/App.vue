@@ -1,21 +1,37 @@
 <script setup lang="ts">
-// This starter template is using Vue 3 <script setup> SFCs
-// Check out https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup
-import HelloWorld from './components/HelloWorld.vue'
+import footer from './components/btmNav.vue'
+import playerFilter from './components/playerFilter.vue'
+import players from './components/players.vue'
+import topNav from './components/topNav.vue'
+import btmNav from './components/btmNav.vue';
 </script>
 
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Hello Vue 3 + TypeScript + Vite" />
+  <div class="flex flex-col h-screen">
+    <header class="flex justify-between px-10 py-2">
+      <topNav />
+    </header>
+
+    <section class="flex-1 justify-center px-10 py-3">
+      <playerFilter />
+
+      <players />
+    </section>
+
+    <footer>
+      <btmNav />
+    </footer>
+  </div>
 </template>
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: SourceSansProRegular, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+}
+
+html {
+  background-color: #98202a;
 }
 </style>

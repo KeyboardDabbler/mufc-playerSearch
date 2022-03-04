@@ -3,7 +3,7 @@
 
 <template>
     <div class="pb-5 px-5">
-        <ul class="grid grid-cols-4 mb-3">
+        <ul class="grid grid-cols-4 mb-3 sponsors">
             <li class="flex items-center justify-center">
                 <a href="/en/Partners/Global/adidas">
                     <img
@@ -43,8 +43,8 @@
         </ul>
     </div>
 
-    <div class="socials p-5">
-        <ul class="soocials flex justify-center">
+    <div class="p-5">
+        <ul class="socials flex justify-center">
             <li class="mx-4 flex justify-center items-center">
                 <a href="https://www.youtube.com/manutd">
                     <img
@@ -110,19 +110,19 @@
     color: #f7d144;
 }
 
-.socials {
-    background-color: #2a2a2a;
+.sponsors img {
+    width: auto;
+    height: 42px;
 }
-
-.soocials li {
+.socials li {
     width: 44px;
     height: 44px;
-    background-color: #3f3f3f;
+    border-width: 2px;
     border-radius: 50%;
 }
 
-.soocials img {
-    width: 20px;
-    height: 20px;
+.socials img {
+    width: auto;
+    height: 26px;
 }
 </style>

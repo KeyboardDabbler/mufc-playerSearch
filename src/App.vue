@@ -12,9 +12,11 @@ import btmNav from './components/btmNav.vue';
       <topNav />
     </header>
 
-    <section class="flex-1 justify-center px-10 py-3">
+    <section class="px-10 py-3">
       <playerFilter />
+    </section>
 
+    <section class="grid place-items-center h-screen">
       <players />
     </section>
 
